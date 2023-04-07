@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Miserable attempt at a coding doc</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav id="nav-bar">
+          <div id="nav-border"></div>
+            <header id="nav-head">A Doc Of What I Know</header>
+            <ul>
+              <li class="nav-list">
+                <a class="nav-link" href="#intro">Introduction</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#c#">C#</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#html-css">HTML, CSS</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#js">JavaScript</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#git">Git</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-link" href="#resources">My Resources</a>
+              </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="section" id="intro">
+                <header>Introduction</header>
+                <article>
+                  <p>Welcome to my documentation of what I know of coding thus far! First, however, a lengthy background that no one asked for is in order.
+                    <br><br>
+                     I started in hopes of creating games, starting with unity. Since unity uses C# that's what I wrote my very first line of code in, which inspite of tradition was "He-Hewo" instead of "Hello World" cause that's boring.
+                     <br>
+                      To get started I watched a few videos of a youtube channel named Brackeys, and after a few days I downloded unity. Which instead of being a grand experince that immediatley locks you in your room creating and experimenting as the usual delusions might go was in fact...not that. I watched a tutorial from game makers toolkit on unity which "taught" me how to make a flappy bird clone, and as one would expect, writing code line by line as seen in a video doesn't retain in memory too well.
+                      <br><br>
+                      I decided a better baseline understanding of code was needed, so as any reasonable person would I turned to reddit. I heard of resources such freeCodeCamp (which is why I'm writing this) and the magical and whimsical, Odin Project (I'll get to that later). So, with these free sites nicely laid out for me I went with web development, and maybe someday I'll be able to more comfortably get into game dev.<br> Aaaaaanyway onto the Doc...
+                  </p>
+                </article>
+            </section>
+            <section class="section" id="c#">
+              <header>The little I know of C#</header>
+              <article>
+                <p id="c#-text">The simplest thing I can think to start with is basic text, which to write in C# is <code>Console.Write();</code> or <code>Console.WriteLine();</code>. Methods like this are followed by a semicolon to signify the end of the command. And the differnce between these two methods is that the first one simply writes the text enterd on the current line while the latter writes on a new line. Inside the paranthesis are where you enter either text, numbers or variables, which we'll get to in a moment. <strong>Note:</strong> Text needs to be within quotation marks, for example, <code>Console.Write("Hoi");</code>.
+                <br>
+                Another important aspect of C# is that it is <strong>case sensitive</strong>, meaning the "C" and "W" in <code>Console.Write</code> have to be capitilized otherwise it'll throw an error.
+                <br><br>
+                You can also assign preset values to specific keywords called <span class="bold-italic">variables</span>. For example instead of writing and equation that you want to use multiple times like 42*4+23-4/8 for whatever odd reason, you can easily use this somewhere else by assigning it to a variable like so <code>int equation = 42*4+23-4/8;</code>. Now it is tied to <code>equation</code>, neato. <span class="bold-italic">Another Note: </span>In C# you need to state what type of variable your creating, such as numbers need to be in a <code>int</code> while strings of text are in <code>string</code> variable types. There's more but I don't feel like writing it all out so uhh, expect these to end abruptly. I know my writing skills need improvement.</p>
+              </article>  
+            </section>
+            <section class="section" id="html-css">
+                <header>What I've gathered for HTML, CSS</header>
+                <article>
+                  <p>HTML & CSS, the languages I'm writing this in. I gotta say though, css is a right bitch. But I'm not gonna rant about my own skill issue, instead I'm going to attempt at putting down a small margin of what I know into text. Lets start with HTML (Hyper Text Markup Language), it is fairly simple in concept and mostly consists of "tags" such as &lt;p&gt; which is an opening tag for paragraphs and is ended by a closing tag such as &lt;/p&gt;. The only differnce with closing tags is the forward slash. Making text on screen is as simple inputting text between these tags. Of course there are many more such as &lt;a&gt; for links, &lt;li&gt; for lists and &lt;button&gt; for well...buttons.
+                    <br><br>
+                    However, before you start customizing the page with tags and making as sick webpage, you need to lay the foundations first.
+                    <br>
+                    To start you need to declare the page format with &lt;! DOCTYPE html&gt;, and then the entire page needs to be wrapped in a &lt;html&gt; tag. After that you need to make a &lt;head&gt; tag, in which you enter your page title within &lt;title&gt;. To edit it with css later on you need to link it with &lt;link&gt;. This is a tag that doesn't need a closing tag along similar to many others I won't get into. Before the ">" you enter "rel=stylesheet" and "href=stlyes.css", the rel, as far as I know, states what type of page the link is going to or how it affects the webpage...I think. And "href" is just how you signify urls or files to link to in html. After that you need a &lt;body&gt; tag to enter the actual content of the page.
+                    <br><br>
+                    Now for CSS (Cascading Style Sheets), it allows you to edit the style and layout of your page to make it purty. But to edit anything you need to specify what element you changing, for example, lets say I want to edit all &lt;p&gt; elements, I would write <code>p {}</code>. Within the brackets you write the type of changes you want to make, which is a <strong>VERY</strong> large pool and I'm not even gonna start with that. To target more specific elements you need to mark them in the html page by adding either a class or an id. You can enter these like this &lt;p class="first-paragraph"&gt; or &lt;p id="last-paragraph"&gt;. <strong>Note:</strong> It is recommended to use classes if you want to edit various elements the same way, such as all bold and id's for a specific element, as you can only use a single id name for one element. Targeting classes is css is just a period followed by the clas name and id's need a hashtag before the name.
+                  </p>
+                </article>
+            </section>
+            <section class="section" id="js">
+                <header>What I managed to understand of JavaScript</header>
+                <article>
+                  <p>Oh goody goody, JavaScript, I...don't know much at the moment but I'll see what I can do. First off to even practice this language you can't just write code and have it appear in the terminal in things like VSCode as you can with C#. You gotta open your browsers devtools and go to the console to start practicing. But once you figure that out (which took me a bit, cause I'm dumb or something) you can start writing code in the console. In JavaScript to enter text or numbers, strictly in the console, you write <code>console.log();</code>, if you wanted to write text for a html page in js you can alternatively write <code>document.write();</code>. Like C# text need to be quotation marks while numbers do not.
+                  <br><br>
+                  Unlike C# you <strong>do not</strong> need to declare variable types like "int" or "string", instead you use <code>let</code>, <code>var</code>, or <code>const</code>. As far as I know <code>let</code> just assigns it to whatever you want, I think it can't be accessed or changed from seperate functions or something, though I'm probably wrong, I'll do my own research at a different time. Things like <code>var</code> I think can be accessed or changed anytime and anywhere so I've heard you should be careful when using it. Then finally <code>const</code> stands for constant and <strong>cannot</strong> be changed in most circumstances though I think you still can, It's just harder to do so.
+                  <br><br>
+                  I'll give a brief explanation of arrays for JavaScript since I used them a bit unlike with C#. really It's like declaring variables but after the "=" you enter the content in square brackets <code>[]</code> and you can create a whole list of itmes or numbers within that. You can access specific items in arrays, for example <code>arrayName[2];</code> That displays the third item in the array, since in code things normally count up from 0 instead of 1. There's alot more to cover but I won't since I'm not technically writing an actual doc.</p>
+                </article>
+            </section>
+            <section class="section" id="git">
+                <header>What I can piece together for Git</header>
+                <article>
+                    <p>Ah git, it still eludes me a bit though it's basic commands for pushing your repos to github and such isn't too complicated. It's a handy dandy thing refered to as "version control". Which allows you to save either your code and files or from a team your working with and store them locally on the your machine, so you safely make changes without disrupting anyone else's work. To create a git repository or repo you go the file directory your trying to save with git, to do this on windows at least you enter into the terminal "C:\filepath", once your in the file you type <code>git init</code>. With that you have a git repo on your machine. Now you make think a I'm a bitch but I've only used the vscode built in git functionality to push to github so I'm not privvy on the details on how to do so in the terminal. But as far as I know you use the <code>git push</code> command and specify the branch I think, which is usually main by default. That is uh...all I really got at the moment so on to the next and last segment.</p>
+                </article>
+            </section>
+            <section class="section" id="resources">
+                <header>My resources so far</header>
+                <article>
+                  <p>Ok, this should be quick, I've typed all this starting from the html & css segment in one sitting so I want to finish this. Aside from general online help like stackoverflow my resources so far have been as follows.</p>
+                  <li>freeCodeCamp</li>
+                  <li>MDN Web Docs</li>
+                  <li>Microsoft Learn</li>
+                  <li>And the Microsoft web-dev-for-beginners github repo</li>
+                  <li>I've also watched the first two cs50 lectures, which I might continue I don't know</li>
+                  <p>Plus at somepoint I plan On doing the Odin Project.</p>
+                  <aside>And with that this doc has reached its conclusion, good day to you.</aside>
+            </section>
+        </main>
+    </body>
+</html>

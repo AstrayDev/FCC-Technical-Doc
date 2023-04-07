@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bold-italic {
+    font-style: italic;
+    font-weight: bold;
+}
+
+header {
+    font-size: 30px;
+    font-weight: 350;
+}
+
+#nav-head {
+    font-size: 22px;
+}
+
+#nav-bar {
+    width: 24%;
+    height: 100%;
+    position: fixed;
+    border-right: 3px solid rgb(168, 165, 165);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+#nav-head {
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    #main-doc {
+        font-size: 30px;
+    }
+
+    #nav-bar {
+        font-size: 30px;
+    }
+
+    header {
+        font-size: 47px;
+        font-weight: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #main-doc {
+         font-size: 28px;
+    }
+    
+
+    #nav-bar {
+       font-size: 28px;
+       width: 35%;
+    }
+
+    header {
+        font-size: 40px;
+        font-weight: 400px;
+    }
+}
+
+#main-doc {
+    width: 70%;
+    margin: 0px;
+    position: absolute;
+    left: 25rem;
+}
+
+code {
+    background-color: rgb(204, 202, 202);
+    font-size: 14px;
+    
+}
+.nav-link {
+    color: black;
+    display: block;
+    padding: 20px 0 0 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link:visited {
+    color: black;
+}
+.nav-link:hover {
+    transition: 0.5s all;
+    font-size: 20px;
+}
